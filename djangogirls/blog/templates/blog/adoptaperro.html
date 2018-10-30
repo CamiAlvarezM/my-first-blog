@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+<head>
+  <link rel="stylesheet" href="{% static 'css/gal.css' %}">
+  <link rel="stylesheet" media="screen and (max-width: 700px)" href="{% static 'css/celu.css' %}">
+ </head>
+<body>
+  <main>
+      <p id="gal" >Selecciona perrito - Adoptados</p>
+    <h1 id="titulo" >Has adoptado un perro!</h1>
+  </main>
+</body>
+{% endblock %}
