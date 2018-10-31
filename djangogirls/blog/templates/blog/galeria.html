@@ -9,19 +9,19 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/estilo.css">
   <link rel="stylesheet" href="css/galeria.css">
-  <link rel="stylesheet" href="{% static 'css/gal.css' %}">
+  <link rel="stylesheet" href="{% static 'css/galeria.css' %}">
   <link rel="stylesheet" media="screen and (max-width: 700px)" href="{% static 'css/celu.css' %}">
-  <link rel="stylesheet" media="screen and (max-width: 500px)" href="{% static 'css/enano.css' %}">
+  <link rel="stylesheet" media="screen and (max-width: 500px)" href="{% static 'css/pc.css' %}">
 </head>
 <body>
   <main>
-    <p id="gal" >Adoptanos</p>
-  <h1 id="titulo" >PERRITOS EN ADOPCION</h1>
+    <p id="galeria" >¿Quieres Adoptarnos?</p>
+  <h1 id="titulo" >PERRITOS EN ADOPCIÓN</h1>
 <div id="perritos">
       {% for perros in perros %}
        <div class="boxDog">
           <p class="parrafo">
-            <img src="/media/{{ perros.imagen1 }}" width="200">
+            <img src="/media/{{ perros.imgaleria1.gif }}" width="200">
             <p>Nombre: {{ Formulario.nombre }}</p>
             <p>Raza: {{ Formulario.raza }}</p>
             <p>Estado: {{ Formulario.estado }}</p>

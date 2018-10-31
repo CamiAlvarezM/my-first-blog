@@ -83,5 +83,3 @@ def adopt(request, pk):
     perro.estado = 'Adoptado'
     perro.save()
     return render(request, 'blog/adoptaperro.html',{})
-
-# Create your views here.
